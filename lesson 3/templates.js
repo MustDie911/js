@@ -5,6 +5,9 @@
 
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 
+for (const listOfItem of listOfItems) {
+    document.write(`<ul><li>ITEM OF ARRAY</li>${listOfItems}</ul>`)
+}
 
 /*
 Використовуючи данні з масиву, за допомоги document.write та циклу
@@ -12,6 +15,7 @@ let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'an
 Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон.
 Шаблон застосувати до кожного об'єкта в масиві
 */
+
 let simpsons = [
     {
         name: 'Bart',
@@ -48,8 +52,24 @@ let simpsons = [
         info: 'Ма́ргарет Эвелин «Мэ́гги» Си́мпсон (англ. Margaret Evelyn “Maggie” Simpson) — персонаж мультсериала «Симпсоны». Впервые появилась на телевидении в шоу Трейси Ульман, в короткометражке Good Night (англ.)русск. 19 апреля 1987 года. Мэгги была придумана и разработана карикатуристом Мэттом Грейнингом, пока он ждал встречи с Джеймсом Л. Бруксом. Названа в честь младшей сестры Грейнинга. После появления в шоу Трейси Ульман, через три года семья Симпсонов получила собственный сериал на телеканале Fox, дебют произошёл 17 декабря 1989 года.',
         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
     },
+    {
+        name: 'Santas Little Helper',
+        surname: '(dog)',
+        age: 34,
+        info: 'Помощник был взят семьей Симпсонов уже взрослым. Гомер и Барт пошли на собачьи бега в попытке заработать, но проиграли деньги, поставив на Помощника, который пришел последним. Они ушли со стадиона расстроенными и увидели, как хозяин в гневе выгоняет пса. Помощник прыгнул Гомеру на руки, и тот сразу почувствовал с ним связь, поскольку он такой же неудачник. Таким образом Помощник стал подарком семье на Рождество. Это произошло в 1-й серии',
+        photo: 'https://upload.wikimedia.org/wikipedia/ru/7/72/The_Simpsons_Santa%27s_Little_Helper.gif'
+    },
 ];
 
+for (const simpson of simpsons) {
+    document.write(`<div class="simpsons">${simpson.name} ${simpson.surname} ${simpson.age} ${simpson.info} <img src="${simpson.photo}" alt=""></div>`)
+}
+for (const simpson of simpsons) {
+    document.write(`<div class="simpsons2"> <h2>${simpson.name} ${simpson.surname}. age is - ${simpson.age}</h2>
+<p>${simpson.info}</p>
+<img src="${simpson.photo}" alt="">
+</div>`)
+}
 
 /*
 Використовуючи данні з масиву, за допомоги document.write та циклу
@@ -78,3 +98,9 @@ let products = [
         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
     },
 ];
+
+for (const product of products) {
+    document.write(`<div class="product-card"> <h3 class="product-title">${product.title} ${product.price} - PRICE</h3> 
+<img src="${product.image}" alt="">
+</div>`)
+}
