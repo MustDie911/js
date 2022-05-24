@@ -36,7 +36,7 @@
 
 // let randomizer = () => {
 //     let arr = [];
-//     for (let i = 0; i < 100; i++) {
+//     for (let i = 0; i < 10; i++) {
 //         arr[i] = Math.round(Math.random() * 100);
 //     }
 //     return arr;
