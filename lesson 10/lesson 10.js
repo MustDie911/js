@@ -6,20 +6,20 @@
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.
 //     При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 
-// let htmlInputElement = document.createElement('input');
-// htmlInputElement.type = 'number';
-// let htmlButtonElement = document.createElement('button');
-// htmlButtonElement.innerText='chek';
-// document.body.append(htmlInputElement,htmlButtonElement);
-//
-// htmlButtonElement.addEventListener('click',function () {
-//     if (htmlInputElement.value >= 18) {
-//         alert('access is allowed')
-//     } else {
-//         alert('access denied')
-//     }
-//     htmlInputElement.value = '';
-// })
+let htmlInputElement = document.createElement('input');
+htmlInputElement.type = 'number';
+let htmlButtonElement = document.createElement('button');
+htmlButtonElement.innerText='chek';
+document.body.append(htmlInputElement,htmlButtonElement);
+
+htmlButtonElement.addEventListener('click',function () {
+    if (htmlInputElement.value >= 18) {
+        alert('access is allowed')
+    } else {
+        alert('access denied')
+    }
+    htmlInputElement.value = '';
+})
 
 
 // - створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
